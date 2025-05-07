@@ -2,7 +2,7 @@ FROM python:3.12.0-slim
 
 WORKDIR /cicada
 
-COPY ./requirements.txt
+COPY ./requirements.txt .
 
 RUN pip install --upgrade pip
 
