@@ -12,9 +12,10 @@ const Catalog: FC = () => {
           <div className="catalog__text text hidden-mobile">Приобрести изделие можно через WhatsApp / Telegram</div>
         </div>
         <ul className="catalog__filters">
-          <li className="catalog__filter"><Link className="catalog__link" href="/">Игрушки</Link></li>
-            <li className="catalog__filter"><Link className="catalog__link" href="/">Статуэтки</Link></li>
+          <li className="catalog__filter"><Link className="catalog__link" href="/catalog#toys">Игрушки</Link></li>
+            <li className="catalog__filter"><Link className="catalog__link" href="/catalog#statuete">Статуэтки</Link></li>
             <li className="catalog__filter"><Link className="catalog__link" href="/catalog#puzzles">Головоломки</Link></li>
+            <li className="catalog__filter"><Link className="catalog__link" href="/catalog#household">В хозяйстве пригодится</Link></li>
           </ul>
           <div className="catalog__body">
             <div className="catalog__products">
