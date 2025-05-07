@@ -1,3 +1,5 @@
+#!/bin/sh
+
 until  python manage.py migrate
 do
   echo "..."
