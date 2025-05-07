@@ -17,9 +17,9 @@ class ShowBase(TemplateView):
 
 
 def handler_404(request, exception):
-    return render(request, template_name='/404.html')
+    return render(request, template_name='d3/404.html')
 
 def handler_500(request):
-    return render(request, template_name='500.html')
+    return render(request, template_name='d3/500.html')
 
 
