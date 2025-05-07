@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<main class="main">
+      <section class="full-product">
+        <div class="full-product__inner container">
+          <h1 class="full-product__title title">Пёсель</h1>
+          <div class="full-product__body">
+
+            {% include 'products/swiper/swiper_product_7(dog).html' %}
+
+            <div class="full-product__content">
+              <div class="full-product__price text text--very-big">888 ₽</div>
+
+                {% include 'products/products_contacts_full.html' %}
+
+              <div class="full-product__block is-description">
+                <div class="full-product__block-label text text--main-2-light">Описание:</div>
+                <div class="full-product__block full-product__description text">
+                  <p>Длина 20–22 см, ширина 8 см (голова) и 11.5 см (лапки пластом), высота 6 см — эти аксолотли идеально подходят для игры как в доме, так и на улице. Они лёгкие и удобные для маленьких ручек, но при этом достаточно прочные, чтобы выдержать многочасовые игровые приключения</p>
+                  <p>Водостойкость и устойчивость к механическим воздействиям: Наша игрушка покрыта специальным лаком в местах ручного покраса, что делает её водостойкой и устойчивой к механическим повреждениям. Вы можете безопасно брать аксолотля «КЕНДИ» с собой на пляж, в бассейн или просто играть с ним во дворе</p>
+                </div>
+              </div>
+              <div class="full-product__block">
+                <div class="full-product__block-label text text--main-2-light">Оплата и доставка</div>
+                <div class="full-product__block-text text">
+                  <p>Мы работаем с надёжной службой доставки CDEK, чтобы ваш заказ прибыл быстро и в целости. Либо вы можете забрать товар из нашей мастерской. Оплата осуществляется удобным переводом на карту после согласования всех деталей. Оформляйте заказ, и мы позаботимся о всём остальном!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+            {% include 'products/see_also_full.html' %}
+
+        </div>
+      </section>
+    </main>
+
+{% endblock content %}

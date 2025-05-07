@@ -1,0 +1,43 @@
+<section class="services">
+        <div class="services__inner container">
+          <div class="section-header">
+            <h2 class="section-header__title text text--main-2-light">Услуги</h2>
+            <div class="section-header__subtitle title">Создаём качественные и уникальные проекты на заказ</div>
+          </div>
+          <div class="services__body">
+            <article class="sevices__service service">
+              <a class="service__link" href="{% url 'services:print3d' %}">
+                <h3 class="service__title text text--big">3D Печать</h3>
+                <p class="service__description text text--regular">Мы используем современные 3D-принтеры для создания точных и качественных изделий. Игрушки, детали, макеты или сувениры — всё, что вы хотите, мы напечатаем из различных материалов, подбирая их под ваши потребности.</p>
+              </a>
+            </article>
+            <article class="sevices__service service">
+              <a class="service__link" href="{% url 'services:modelling3d' %}">
+                <h3 class="service__title text text--big">3D Моделирование</h3>
+                <p class="service__description text text--regular">Наши специалисты создадут уникальную 3D-модель с нуля или доработают вашу идею. Мы учитываем все пожелания, чтобы получить точный результат, который станет основой для печати или других проектов.</p>
+              </a>
+            </article>
+            <article class="sevices__service service">
+              <a class="service__link" href="{% url 'services:visualise3d' %}">
+                <h3 class="service__title text text--big">3D Визуализация</h3>
+                <p class="service__description text text--regular">Мы создаём фотореалистичные изображения ваших будущих изделий. Вы сможете увидеть, как будет выглядеть проект до его изготовления, и внести правки на этапе планирования.</p>
+              </a>
+            </article>
+            <article class="sevices__service service">
+              <a class="service__link" href="{% url 'services:painting' %}">
+                <h3 class="service__title text text--big">Роспись</h3>
+                <p class="service__description text text--regular">Добавьте индивидуальности вашему изделию с помощью профессиональной росписи. Мы используем стойкие краски и художественный подход, чтобы создать яркий и уникальный дизайн.</p>
+              </a>
+            </article>
+            <article class="sevices__service service">
+              <a class="service__link" href="{% url 'services:postprocessing' %}">
+                <h3 class="service__title text text--big">Постобработка</h3>
+                <p class="service__description text text--regular">После печати мы доводим изделия до совершенства: удаляем лишний материал, шлифуем поверхности, окрашиваем и собираем конструкцию, чтобы готовый продукт выглядел идеально.</p>
+              </a>
+            </article>
+
+            {% include 'services/service_list_contacts.html' %}
+
+          </div>
+        </div>
+      </section>

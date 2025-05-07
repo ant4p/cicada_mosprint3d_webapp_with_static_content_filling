@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main class="main">
+      <section class="service-products">
+        <div class="service-products__inner container">
+          <h1 class="service-products__title title">3D Моделирование</h1>
+          <div class="service-products__body">
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/services/m1-320x250.jpg 320w, /static/assets/images/services/m1-400x360.jpg 400w, /static/assets/images/services/m1-440x400.jpg 440w" src="/static/assets/images/services/m1-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">Полигональное 3D-моделирование</h3>
+                <div class="service-product__price text text--big">Цена - по запросу</div>
+                <div class="service-product__description text text--regular">
+                  <p>Полигональное моделирование заключается в построении трехмерной фигуры на основе плоской поверхности, которая размечается сеткой. Сетка состоит из линий, называемых ребрами, которые пересекаются в точках, называемых вершинами. Ребра делят поверхность на отдельные полигоны. На программном уровне осуществляются действия с ребрами и вершинами до тех пор, пока объект не примет нужную форму, при этом происходит смещение полигонов относительно друг друга под различными углами. Число полигонов может достигать огромных значений. По мере его увеличения сетка все сильнее напоминает контуры создаваемого объекта, и он все более становится таким, как задумывалось.
+                    Это аналогично тому, как правильный многоугольник при увеличении числа ребер принимает форму круга.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/services/m2-320x250.jpg 320w, /static/assets/images/services/m2-400x360.jpg 400w, /static/assets/images/services/m2-440x400.jpg 440w" src="/static/assets/images/services/m2-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">Параметрическое 3D-моделирование</h3>
+                <div class="service-product__price text text--big">Цена - по запросу</div>
+                <div class="service-product__description text text--regular">
+                  <p>В ходе параметрического моделирования вначале создается эскиз, с которым впоследствии происходят изменения. В основе лежит математическая модель с подходящими параметрами, меняя значения которых, можно создать множество фигур. С помощью изменения параметров можно добиться необходимого вида модели.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+{% include 'services/services_list.html' %}
+
+    </main>
+
+{% endblock content %}

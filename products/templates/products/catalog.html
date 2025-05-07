@@ -1,0 +1,327 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="main">
+      <section class="catalog">
+        <div class="catalog__inner container">
+          <div class="catalog__header">
+            <h1 class="catalog__title title">КАТАЛОГ</h1>
+            <div class="catalog__text text hidden-mobile">Приобрести изделие можно через WhatsApp / Telegram</div>
+          </div><swiper-container class="catalog__slider" init="false"><swiper-slide>
+              <a class="catalog__link link" href="/catalog#toys">Игрушки</a>
+            </swiper-slide><swiper-slide>
+              <a class="catalog__link link" href="/catalog#statuete">Статуэтки</a>
+            </swiper-slide><swiper-slide>
+              <a class="catalog__link link" href="/catalog#puzzles">Головоломки</a>
+            </swiper-slide><swiper-slide>
+              <a class="catalog__link link" href="/catalog#household">В хозяйстве пригодится</a>
+            </swiper-slide></swiper-container>
+          <ul class="catalog__filters">
+            <li class="catalog__filter">
+              <a class="catalog__link link" href="/catalog#toys">Игрушки</a>
+            </li>
+            <li class="catalog__filter">
+              <a class="catalog__link link" href="/catalog#statuete">Статуэтки</a>
+            </li>
+            <li class="catalog__filter">
+              <a class="catalog__link link" href="/catalog#puzzles">Головоломки</a>
+            </li>
+            <li class="catalog__filter">
+              <a class="catalog__link link" href="/catalog#household">В хозяйстве пригодится</a>
+            </li>
+          </ul>
+          <div class="catalog__body">
+            <div class="catalog__products" id="toys">
+              <h2 class="catalog__label title title--small">ИГРУШКИ</h2>
+              <div class="catalog__products-body">
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_1' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/axolotl-320x320.jpg 320w, /static/assets/images/products/axolotl-400x400.jpg 400w, /static/assets/images/products/axolotl-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Подвижный Аксолотль</h3>
+                    <div class="product__price text text--regular">1200 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_2' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/yeti-320x320.jpg 320w, /static/assets/images/products/yeti-400x400.jpg 400w, /static/assets/images/products/yeti-420x420.jpg 420w" src="/static/assets/images/products/product_2-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Рогатый розовый йети</h3>
+                    <div class="product__price text text--regular">1500 ₽</div>
+                  </div>
+                </article>
+
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_4' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/bug_1-320x320.jpg 320w, /static/assets/images/products/bug_1-400x400.jpg 400w, /static/assets/images/products/bug_1-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Жук первый</h3>
+                    <div class="product__price text text--regular">2000 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_5' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/bug_2-320x320.jpg 320w, /static/assets/images/products/bug_2-400x400.jpg 400w, /static/assets/images/products/bug_2-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Жук второй</h3>
+                    <div class="product__price text text--regular">2000 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_11' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/ikran-320x320.jpg 320w, /static/assets/images/products/ikran-400x400.jpg 400w, /static/assets/images/products/ikran-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Икран из аватара</h3>
+                    <div class="product__price text text--regular">7500 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_7' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/dog-320x320.jpg 320w, /static/assets/images/products/dog-400x400.jpg 400w, /static/assets/images/products/dog-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Пёсель</h3>
+                    <div class="product__price text text--regular">888 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_10' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/goat-320x320.jpg 320w, /static/assets/images/products/goat-400x400.jpg 400w, /static/assets/images/products/goat-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Magic Goat!</h3>
+                    <div class="product__price text text--regular">6666 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_8' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/doll-320x320.jpg 320w, /static/assets/images/products/doll-400x400.jpg 400w, /static/assets/images/products/doll-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Кукла</h3>
+                    <div class="product__price text text--regular">5700 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_14' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/owl-320x320.jpg 320w, /static/assets/images/products/owl-400x400.jpg 400w, /static/assets/images/products/owl-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Сова</h3>
+                    <div class="product__price text text--regular">2222 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_18' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/tiger-320x320.jpg 320w, /static/assets/images/products/tiger-400x400.jpg 400w, /static/assets/images/products/tiger-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Подвижный тигр</h3>
+                    <div class="product__price text text--regular">4800 ₽</div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="catalog__products" id="statuete">
+              <h2 class="catalog__label title title--small">Статуэтки</h2>
+              <div class="catalog__products-body">
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_3' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/big-320x320.jpg 320w, /static/assets/images/products/big-400x400.jpg 400w, /static/assets/images/products/big-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Каменный истукан</h3>
+                    <div class="product__price text text--regular">3500 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_9' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/dominate-320x320.jpg 320w, /static/assets/images/products/dominate-400x400.jpg 400w, /static/assets/images/products/dominate-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Близняшки Atomic Heart</h3>
+                    <div class="product__price text text--regular">16300 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_12' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/mask_1-320x320.jpg 320w, /static/assets/images/products/mask_1-400x400.jpg 400w, /static/assets/images/products/mask_1-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Маска первая</h3>
+                    <div class="product__price text text--regular">2800 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_13' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/mask_2-320x320.jpg 320w, /static/assets/images/products/mask_2-400x400.jpg 400w, /static/assets/images/products/mask_2-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Маска вторая</h3>
+                    <div class="product__price text text--regular">2800 ₽</div>
+                  </div>
+                </article>
+
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_15' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/pokemon-320x320.jpg 320w, /static/assets/images/products/pokemon-400x400.jpg 400w, /static/assets/images/products/pokemon-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Pokemon GO!</h3>
+                    <div class="product__price text text--regular">4500 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_16' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/seahorse-320x320.jpg 320w, /static/assets/images/products/seahorse-400x400.jpg 400w, /static/assets/images/products/seahorse-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Морская лошадь</h3>
+                    <div class="product__price text text--regular">7777 ₽</div>
+                  </div>
+                </article>
+              </div>
+            </div>
+            <div class="catalog__products" id="puzzles">
+              <h2 class="catalog__label title title--small">Головоломки</h2>
+              <div class="catalog__products-body">
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_6' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/chess-320x320.jpg 320w, /static/assets/images/products/chess-400x400.jpg 400w, /static/assets/images/products/chess-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Шахматы</h3>
+                    <div class="product__price text text--regular">15999 ₽</div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+            <div class="catalog__products" id="household">
+              <h2 class="catalog__label title title--small">В хозяйстве пригодится</h2>
+              <div class="catalog__products-body">
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_17' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/shark-320x320.jpg 320w, /static/assets/images/products/shark-400x400.jpg 400w, /static/assets/images/products/shark-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Акула подставка</h3>
+                    <div class="product__price text text--regular">2200 ₽</div>
+                  </div>
+                </article>
+
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_19' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/voodoo-320x320.jpg 320w, /static/assets/images/products/voodoo-400x400.jpg 400w, /static/assets/images/products/voodoo-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Voodoo держатель зубочисток</h3>
+                    <div class="product__price text text--regular">999 ₽</div>
+                  </div>
+                </article>
+                <article class="catalog__product product">
+                  <a href="{% url 'catalog:product_20' %}" class="product__link"></a>
+                  <div class="product__preview">
+
+                    {% include 'products/products_contacts.html' %}
+
+                    <img srcset="/static/assets/images/products/robot-320x320.jpg 320w, /static/assets/images/products/robot-400x400.jpg 400w, /static/assets/images/products/robot-420x420.jpg 420w" src="/static/assets/images/products/product-420x420.jpg" sizes="(min-width: 420px) 420px, 100vw" width="420" height="420" alt="Продукт" decoding="async" loading="lazy" class="product__image">
+                  </div>
+                  <div class="product__footer">
+                    <h3 class="product__title text text--regular">Робот органайзер</h3>
+                    <div class="product__price text text--regular">5500 ₽</div>
+                  </div>
+                </article>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+{% endblock content %}

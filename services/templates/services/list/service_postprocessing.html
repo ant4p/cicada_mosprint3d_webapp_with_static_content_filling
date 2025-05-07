@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main class="main">
+      <section class="service-products">
+        <div class="service-products__inner container">
+          <h1 class="service-products__title title">Постобработка</h1>
+          <div class="service-products__body">
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/services/1p-320x250.jpg 320w, /static/assets/images/services/1p-400x360.jpg 400w, /static/assets/images/services/1p-440x400.jpg 440w" src="/static/assets/images/services/1p-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">Механическая постобработка</h3>
+                <div class="service-product__price text text--big">от 6₽/см³</div>
+                <div class="service-product__description text text--regular">
+                  <p>Удаление поддержек при помощи ножа или скальпеля, шлифовка поверхности наждачной бумагой, надфилями и другими инструментами, финишная полировка – всё это примеры механической обработки. Во многих случаях без неё не обойтись. Исключение здесь составляют тонкостенные и комбинированные модели: одно неверное движение, и такое изделие будет испорчено.
+                    <br>Правила такой обработки довольно просты. В первую очередь мы удаляем поддержки и зачищаем места их крепления, потом обрабатываем поверхность грубым абразивом и затем шлифуем мелким. Работать шкуркой и надфилем лучше всего круговыми движениями – так эффективнее всего.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/services/2p-320x250.jpg 320w, /static/assets/images/services/2p-400x360.jpg.jpg 400w, /static/assets/images/services/2p-440x400.jpg 440w" src="/static/assets/images/services/2p-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">Химическая постобработка</h3>
+                <div class="service-product__price text text--big">от 6₽/см³</div>
+                <div class="service-product__description text text--regular">
+                  <p>Для разных типов пластика используются разные химические растворители:
+                      <br>для ABS – ацетон, 646 растворитель, этилацетат, дихлорметан;
+                      <br>для PLA – дихлорметан;
+                      <br>для HIPS – D-лимонен;
+                      <br>для SBS – D-лимонен, сольвент;
+                      <br>для Nylon – соляная кислота;
+                      <br>для PVA – вода.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/services/3p-320x250.jpg 320w, /static/assets/images/services/3p-400x360.jpg 400w, /static/assets/images/services/3p-440x400.jpg 440w" src="/static/assets/images/services/3p-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">Грунтовка, шпатлёвка и покраска</h3>
+                <div class="service-product__price text text--big">от 6₽/см³</div>
+                <div class="service-product__description text text--regular">
+                  <p>При необходимости поверхность вашего изделия можно зашпатлевать, и окрасить так, что модель станет неотличима от изготовленной методом литья. Перед шпатлёвкой поверхность нужно загрунтовать. Для этого можно использовать самые разные грунтовки, но лучше всего себя показывают профессиональные: они дают максимально однородное покрытие без шагрени.Выбор шпатлёвок у вас тоже будет немалый. Подойдут обычные автомобильные, специальные и эпоксидные. Самый лучший результат демонстрируют двухкомпонентные шпатлёвки. В отличие от остальных они почти не дают усадку после высыхания. Когда шпатлёвка высохнет, её следует обработать наждачкой или любым другим мелким абразивом. Теперь модель можно покрывать лаком, эпоксидкой или окрашивать – например, акрилом или эмалью.</p>
+                  </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+{% include 'services/services_list.html' %}
+
+    </main>
+
+{% endblock content %}

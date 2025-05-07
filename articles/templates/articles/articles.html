@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <main class="main">
+      <section class="articles">
+        <div class="articles__inner container">
+          <h1 class="articles__title title">Статьи</h1>
+          <div class="articles__body">
+            <article class="article">
+              <a class="article__link" href="{% url 'articles:article_1' %}">
+                <h3 class="article__title text text--big">Как 3D-принтеры меняют индустрию</h3>
+                <img srcset="/static/assets/images/article-320x170.jpg 320w, /static/assets/images/article-380x200.jpg 380w" src="/static/assets/images/article-380x200.jpg" sizes="(min-width: 380px) 380px, 100vw" width="380" height="200" alt="Статья" decoding="async" loading="lazy" class="article__image">
+                <div class="article__description text text--regular">В статье рассматривается влияние 3D-технологий на традиционные методы производства, приводятся примеры успешных кейсов внедрения аддитивных технологий в различных отраслях</div>
+              </a>
+            </article>
+            <article class="article">
+              <a class="article__link" href="{% url 'articles:article_2' %}">
+                <h3 class="article__title text text--big">Как 3D-принтеры не меняют индустрию</h3>
+                <img srcset="/static/assets/images/article-320x170.jpg 320w, /static/assets/images/article-380x200.jpg 380w" src="/static/assets/images/article-380x200.jpg" sizes="(min-width: 380px) 380px, 100vw" width="380" height="200" alt="Статья" decoding="async" loading="lazy" class="article__image">
+                <div class="article__description text text--regular">В статье рассматривается отрицательное влияние 3D-технологий на традиционные методы производства, приводятся примеры успешных кейсов внедрения аддитивных технологий в различных отраслях</div>
+              </a>
+            </article>
+
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+{% endblock content %}

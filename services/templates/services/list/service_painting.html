@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main class="main">
+      <section class="service-products">
+        <div class="service-products__inner container">
+          <h1 class="service-products__title title">Роспись</h1>
+          <div class="service-products__body">
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/services/1pr-320x250.jpg 320w, /static/assets/images/services/1pr-400x360.jpg 400w, /static/assets/images/services/1pr-440x400.jpg 440w" src="/static/assets/images/services/1pr-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">Акриловые краски</h3>
+                <div class="service-product__price text text--big">от 10 ₽/см³</div>
+                <div class="service-product__description text text--regular">
+                  <p>Это одни из самых популярных красок для пластика, благодаря своим качественным характеристикам. Они обладают высокой стойкостью к истиранию, выгоранию на солнце и воздействию влаги. Подходят как для внутренних, так и для наружных работ.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/services/1pr-320x250.jpg 320w, /static/assets/images/services/1pr-400x360.jpg 400w, /static/assets/images/services/1pr-440x400.jpg 440w" src="/static/assets/images/services/1pr-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">Алкидные краски</h3>
+                <div class="service-product__price text text--big">от 10 ₽/см³</div>
+                <div class="service-product__description text text--regular">
+                  <p>Более долговечные по сравнению с акриловыми, но при этом требуют более длительного времени для высыхания. Отлично подходят для окраски высоконагруженных поверхностей.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/services/2pr-320x250.jpg 320w, /static/assets/images/services/2pr-400x360.jpg 400w, /static/assets/images/services/2pr-440x400.jpg 440w" src="/static/assets/images/services/2pr-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">Полиуретановые краски.</h3>
+                <div class="service-product__price text text--big">от 10 ₽/см³</div>
+                <div class="service-product__description text text--regular">
+                  <p>Обеспечивают высокую адгезию к пластиковым поверхностям и прекрасное покрытие. Их можно использовать как для внутренних, так и для наружных работ.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+{% include 'services/services_list.html' %}
+
+    </main>
+
+{% endblock content %}

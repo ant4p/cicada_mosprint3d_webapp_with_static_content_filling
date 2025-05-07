@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <main class="main">
+      <section class="service-products">
+        <div class="service-products__inner container">
+          <h1 class="service-products__title title">3D печать</h1>
+          <div class="service-products__body">
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/3d_printer-320x291.jpg 320w, /static/assets/images/3d_printer-400x364.jpg 400w, /static/assets/images/3d_printer-440x400.jpg 440w" src="/static/assets/images/3d_printer-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">ABS PLA пластиком</h3>
+                <div class="service-product__price text text--big">от 6₽/см³</div>
+                <div class="service-product__description text text--regular">
+                  <p>FDM-технология 3Д-печати – это самая распространенная, простая и доступная технология аддитивного производства (3D печать PETG пластиком на заказ). Суть ее заключается в расплавлении пластиковой нити и ее нанесении слой за слоем в соответствии с запрограммированной моделью. Все слои имеют одинаковую толщину, определенную параметрами печати и нарезки модели. Нарезка модели осуществляется в специальной программе – слайсере. На основании нарезки формируется специальный G-CODE, который служит набором команд для принтера и 3Д-печати.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/3d_printer-320x291.jpg 320w, /static/assets/images/3d_printer-400x364.jpg 400w, /static/assets/images/3d_printer-440x400.jpg 440w" src="/static/assets/images/3d_printer-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">ABS PLA пластиком</h3>
+                <div class="service-product__price text text--big">от 6₽/см³</div>
+                <div class="service-product__description text text--regular">
+                  <p>FDM-технология 3Д-печати – это самая распространенная, простая и доступная технология аддитивного производства (3D печать PETG пластиком на заказ). Суть ее заключается в расплавлении пластиковой нити и ее нанесении слой за слоем в соответствии с запрограммированной моделью. Все слои имеют одинаковую толщину, определенную параметрами печати и нарезки модели. Нарезка модели осуществляется в специальной программе – слайсере. На основании нарезки формируется специальный G-CODE, который служит набором команд для принтера и 3Д-печати.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+            <article class="service-product">
+              <div class="service-product__container">
+                <img srcset="/static/assets/images/3d_printer-320x291.jpg 320w, /static/assets/images/3d_printer-400x364.jpg 400w, /static/assets/images/3d_printer-440x400.jpg 440w" src="/static/assets/images/3d_printer-440x400.jpg" sizes="(min-width: 440px) 440px, 100vw" width="440" height="400" alt="Продукт" decoding="async" loading="lazy" class="service-product__image">
+              </div>
+              <div class="service-product__body">
+                <h3 class="service-product__title text text--big">ABS PLA пластиком</h3>
+                <div class="service-product__price text text--big">от 6₽/см³</div>
+                <div class="service-product__description text text--regular">
+                  <p>FDM-технология 3Д-печати – это самая распространенная, простая и доступная технология аддитивного производства (3D печать PETG пластиком на заказ). Суть ее заключается в расплавлении пластиковой нити и ее нанесении слой за слоем в соответствии с запрограммированной моделью. Все слои имеют одинаковую толщину, определенную параметрами печати и нарезки модели. Нарезка модели осуществляется в специальной программе – слайсере. На основании нарезки формируется специальный G-CODE, который служит набором команд для принтера и 3Д-печати.</p>
+                </div>
+
+                {% include 'services/services_contacts.html' %}
+
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+{% include 'services/services_list.html' %}
+    </main>
+
+{% endblock content %}
